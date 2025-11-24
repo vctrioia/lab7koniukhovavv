@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript, jQuery та плагіни</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- CSS jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!-- OwlCarousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- UniteGallery CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.28/css/unite-gallery.min.css" />
+</head>
+<body>
+
+<header>
+    <h1>Інтерактивна сторінка про океани</h1>
+</header>
+
+<!--Accordion-->
+<h2>Accordion - розкривні секції</h2>
+<div id="accordion">
+    <h3>Тихий океан</h3>
+    <div><p>Найбільший та найглибший океан на планеті, займає понад 30% поверхні Землі. Тут є вулкани, гірські хребти та загадкові тварини.</p></div>
+
+    <h3>Атлантичний океан</h3>
+    <div><p>Відомий потужними течіями, серед яких Гольфстрім, який впливає на клімат Північної півкулі. Другий за величиною океан.</p></div>
+
+    <h3>Індійський океан</h3>
+    <div>
+        <p>Тепліший за інші океани, багатий кораловими рифами та лагунами бірюзового кольору.</p>
+        <ul>
+            <li>Найсолоніший</li>
+            <li>Сезонні мусони</li>
+            <li>Багатий на морське різноманіття</li>
+        </ul>
+    </div>
+
+    <h3>Північний Льодовитий океан</h3>
+    <div><p>Найменший та найхолодніший океан Землі, покритий льодовими полями більшу частину року.</p></div>
+</div>
+
+<!--Datepicker-->
+<h2>Datepicker - вибір дати</h2>
+<p>Оберіть дату відправлення: <input type="text" id="datepicker"></p>
+
+<!--Menu-->
+<h2>Menu – випадне меню</h2>
+<ul id="menu">
+    <li><div>Морські тварини</div>
+        <ul>
+            <li><div>Риби</div></li>
+            <li><div>Ссавці</div></li>
+            <li><div>Молюски</div></li>
+        </ul>
+    </li>
+    <li><div>Океани світу</div>
+        <ul>
+            <li><div>Тихий</div></li>
+            <li><div>Атлантичний</div></li>
+            <li><div>Індійський</div></li>
+            <li><div>Північний Льодовитий</div></li>
+        </ul>
+    </li>
+</ul>
+
+<!--Slider-->
+<h2>Slider - вибір числа</h2>
+<p>Виберіть глибину для дослідження (в метрах): <span id="slider-value">0</span></p>
+<div id="slider"></div>
+
+<!--Tabs-->
+<h2>Tabs - вкладки</h2>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Факти про океани</a></li>
+        <li><a href="#tabs-2">Морські істоти</a></li>
+        <li><a href="#tabs-3">Коралові рифи</a></li>
+    </ul>
+    <div id="tabs-1"><p>Океани покривають понад 70% поверхні Землі та регулюють клімат на планеті.</p></div>
+    <div id="tabs-2"><p>Морські тварини включають риб, ссавців, молюсків та безліч дрібних істот, важливих для екосистеми.</p></div>
+    <div id="tabs-3"><p>Коралові рифи є домом для тисяч видів морських істот та захищають узбережжя від штормів.</p></div>
+</div>
+
+<!--Tooltip-->
+<h2>Tooltip - спливаючі підказки</h2>
+<ul>
+    <li><span title="Фітопланктон виробляє кисень для Землі.">Фітопланктон</span></li>
+    <li><span title="Підводні гірські хребти, що сягають висоти Евересту.">Серединно-океанічні хребти</span></li>
+    <li><span title="Найглибша відома точка океану — 10 984 м.">Маріанська западина</span></li>
+</ul>
+
+<!--OwlCarousel-->
+<h2>OwlCarousel</h2>
+<div class="owl-carousel owl-theme">
+    <div class="item"><img src="img/pict1.png" alt="pict1"></div>
+    <div class="item"><img src="img/pict2.png" alt="pict2"></div>
+    <div class="item"><img src="img/pict3.png" alt="pict3"></div>
+    <div class="item"><img src="img/pict4.png" alt="pict4"></div>
+    <div class="item"><img src="img/pict5.png" alt="pict5"></div>
+    <div class="item"><img src="img/pict6.png" alt="pict6"></div>
+    <div class="item"><img src="img/pict7.png" alt="pict7"></div>
+    <div class="item"><img src="img/pict8.png" alt="pict8"></div>
+</div>
+
+<!--UniteGallery Tiles-->
+<h2>UniteGallery Tiles</h2>
+<div id="gallery">
+    <img src="img/pict9.jpg" data-image="img/pict9.jpg" alt="">
+    <img src="img/pict10.jpg" data-image="img/pict10.jpg" alt="">
+    <img src="img/pict11.jpg" data-image="img/pict11.jpg" alt="">
+    <img src="img/pict12.jpg" data-image="img/pict12.jpg" alt="">
+    <img src="img/pict13.jpg" data-image="img/pict13.jpg" alt="">
+    <img src="img/pict14.jpg" data-image="img/pict14.jpg" alt="">
+    <img src="img/pict16.jpg" data-image="img/pict16.jpg" alt="">
+    <img src="img/pict17.jpg" data-image="img/pict17.jpg" alt="">
+    <img src="img/pict18.jpg" data-image="img/pict18.jpg" alt="">
+    <img src="img/pict22.jpg" data-image="img/pict22.jpg" alt="">
+    <img src="img/pict20.jpg" data-image="img/pict20.jpg" alt="">
+    <img src="img/pict21.jpg" data-image="img/pict21.jpg" alt="">
+    <img src="img/pict19.jpg" data-image="img/pict19.jpg" alt="">
+    <img src="img/pict23.jpg" data-image="img/pict23.jpg" alt="">
+    <img src="img/pict24.jpg" data-image="img/pict24.jpg" alt="">
+    <img src="img/pict25.jpg" data-image="img/pict25.jpg" alt="">
+    <img src="img/pict26.jpg" data-image="img/pict26.jpg" alt="">
+</div>
+
+<!--UniteGallery Video-->
+<h2>UniteGallery Video Slider</h2>
+<div id="galleryVideo">
+    <img alt="1 відео" src="https://youtu.be/mzRifgFuw1E?si=IsS7Ws65CiPuMFLQ" data-type="youtube" data-videoid="mzRifgFuw1E">
+    <img alt="2 відео" src="https://youtu.be/EF8C4v7JIbA" data-type="youtube" data-videoid="EF8C4v7JIbA">
+    <img alt="3 відео" src="https://youtu.be/VlcI2Vu5uV4?si=o6mMwPQ6k1YDBBM6" data-type="youtube" data-videoid="VlcI2Vu5uV4">
+</div>
+
+<!--JS Libraries-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.28/js/unitegallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.28/themes/tiles/ug-theme-tiles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.28/themes/slider/ug-theme-slider.min.js"></script>
+
+<script>
+$(function() {
+
+    //jQuery UI 
+    $("#accordion").accordion();
+    $("#datepicker").datepicker();
+    $("#menu").menu();
+    $("#tabs").tabs();
+    $(document).tooltip();
+
+    $("#slider").slider({
+        min: 0,
+        max: 11000,
+        value: 0,
+        slide: function(event, ui) {
+            $("#slider-value").text(ui.value);
+        }
+    });
+
+     //OwlCarousel
+    
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        navText: ["‹", "›"],
+        responsive: {
+            0: { 
+                items: 1 
+            },
+            600: { 
+                items: 3 
+            },
+            1000: { 
+                items: 5 
+            }
+        },
+        lazyLoad: true
+    });
+    
+    //UniteGallery Tiles
+    
+    $("#gallery").unitegallery({
+        gallery_theme: "tiles",
+        tiles_type: "justified",
+        tiles_justified_row_height: 200,
+        tiles_col_width: 250,
+        tile_enable_border: true,
+        tile_border_width: 3,
+        tile_enable_shadow: true,
+        tile_shadow_spread: 2,
+        tile_enable_image_effect: true,
+        tile_image_effect_reverse: true,
+        tile_image_effect_type: "sepia",
+        lightbox_type: "wide",
+        gallery_width: "100%",
+        gallery_min_width: 150
+    });
+    
+    //UniteGallery Video Slider
+    $("#galleryVideo").unitegallery({
+        gallery_theme: "slider",
+        slider_enable_arrows: true,
+        slider_enable_bullets: true,
+        gallery_width: "100%",
+        gallery_height: 500,
+        slider_scale_mode: "fit",
+        slider_video_constantsize: false
+    });
+});
+</script>
+
+</body>
+</html>
